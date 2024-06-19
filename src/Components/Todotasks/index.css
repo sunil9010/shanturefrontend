@@ -1,0 +1,143 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url("https://res.cloudinary.com/dufyrxyey/image/upload/v1718734092/unchecked_rubb1t.png");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  color: #0d2233;
+  text-decoration: line-through;
+}
+ul li.unchecked {
+  color: #555;
+  text-decoration: none;
+}
+ul li.checked::before {
+  background-image: url("https://res.cloudinary.com/dufyrxyey/image/upload/v1718734081/checked_hdwqjx.png");
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul span:hover {
+  background: #edeef0;
+  cursor: pointer;
+}
+
+#list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.taske {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  padding-left: 0px;
+}
+.checkFont {
+  color: #000000e6;
+}
+.checkedFont {
+  color: #555;
+}
+.down-upload {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.upload {
+  display: inline;
+  width: 200px;
+}
+.download {
+  margin-bottom: 0px;
+}
+.downloadContainer {
+  align-self: flex-end;
+  margin-left: 25px;
+}
+.shanture {
+  height: 150px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
